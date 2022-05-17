@@ -1,0 +1,33 @@
+<div class="page">
+  <div class="horizontal-center">
+    <div class="vertical-center">
+      <div class="icon-selection-container">
+        <h1 class="full-width">Choose an icon</h1>
+        <form [formGroup]="iconForm" class="full-width">
+          <mat-form-field appearance="outline" style="width: 80%">
+            <mat-label>Select an Icon</mat-label>
+            <mat-select formControlName="iconId">
+              <mat-option>-- None --</mat-option>
+              <mat-optgroup
+                *ngFor="let groupIcons of allIcons"
+                [label]="groupIcons.group"
+              >
+                <mat-option
+                  *ngFor="let item of groupIcons.icons"
+                  [value]="item.name"
+                >
+                  <span>
+                    <mat-icon class="full-width">{{ item.name }}</mat-icon> |
+                  </span>
+                  {{ item.name }}
+                </mat-option>
+              </mat-optgroup>
+            </mat-select>
+          </mat-form-field>
+        </form>
+
+        <mat-icon>{{ iconForm.value.iconId }}</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>
