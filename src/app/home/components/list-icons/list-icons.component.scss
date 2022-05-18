@@ -1,0 +1,19 @@
+.icons-header-container {
+  background-color: rgb(202, 202, 202);
+  h1 {
+    padding-top: 2%;
+  }
+}
+
+.icons-item-container {
+  padding-left: 2%;
+  width: 29.8%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin: 0.5%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  display: flex;
+}

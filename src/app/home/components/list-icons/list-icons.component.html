@@ -1,0 +1,12 @@
+<div *ngFor="let groupIcons of allIcons" class="icons-header-container">
+  <h1>{{ groupIcons.group }}</h1>
+
+  <div class="wrap">
+    <div *ngFor="let item of groupIcons.icons" class="icons-item-container">
+      <span>
+        <mat-icon>{{ item.name }} </mat-icon> |
+      </span>
+      {{ item.name }}
+    </div>
+  </div>
+</div>
