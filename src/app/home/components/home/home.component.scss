@@ -1,0 +1,34 @@
+.page {
+  color: #103060;
+  width: 100w;
+  height: 93vh;
+  font-size: 15px;
+  background-color: rgb(236, 236, 236);
+
+  .vertical-center {
+    height: 200%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .horizontal-center {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.icon-selection-container {
+  background-color: white;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,7 +1,11 @@
-<mat-toolbar>
-  <span>
-    <button mat-button routerLink="/">Selection with optgroup</button>
-    <button mat-button routerLink="/nested-ngfor">Nested ngFor</button></span
-  >
-</mat-toolbar>
-<router-outlet></router-outlet>
+<div class="toolbar-container">
+  <mat-toolbar>
+    <div class="button-cointainer">
+      <button mat-button routerLink="/">Selection with optgroup</button>
+      <button mat-button routerLink="/nested-ngfor">Nested ngFor</button>
+    </div>
+  </mat-toolbar>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
