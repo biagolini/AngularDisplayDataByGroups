@@ -10,4 +10,9 @@ export class ListIconsComponent  {
 
   allIcons: any[] = ICON_BY_GROUP_DATA;
 
+  replaceUnderscore(text:string){ 
+    text = text.replace(/_/g, ' ');
+    return text;
+  }
+
 }
