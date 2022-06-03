@@ -1,18 +1,19 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './components/home/home.component';
 import { SharedModule } from '../shared/shared.module';
-import { ListIconsComponent } from './components/list-icons/list-icons.component';
 import { ExpansionComponent } from './components/expansion/expansion.component';
+import { ListIconsComponent } from './components/list-icons/list-icons.component';
+import { SelectComponent } from './components/select/select.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
+
     ListIconsComponent,
-    ExpansionComponent
+    ExpansionComponent,
+    SelectComponent
   ],
   imports: [
     CommonModule,

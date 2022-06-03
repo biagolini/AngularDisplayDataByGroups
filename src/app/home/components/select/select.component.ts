@@ -3,11 +3,11 @@ import { FormBuilder } from '@angular/forms';
 import { ICON_BY_GROUP_DATA } from 'src/app/shared/data/data';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-select',
+  templateUrl: './select.component.html',
+  styleUrls: ['./select.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class SelectComponent implements OnInit {
   ngOnInit(): void {
   }
   constructor(private form: FormBuilder) {};
@@ -19,4 +19,5 @@ export class HomeComponent implements OnInit {
 
   });
 }
+
 
