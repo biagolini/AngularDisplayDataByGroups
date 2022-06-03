@@ -1,8 +1,15 @@
 <div class="toolbar-container">
   <mat-toolbar>
     <div class="button-cointainer">
-      <button mat-button routerLink="/">Selection with optgroup</button>
-      <button mat-button routerLink="/nested-ngfor">Nested ngFor</button>
+      <button mat-button routerLink="/">
+        {{ "Selection with optgroup" | uppercase }}
+      </button>
+      <button mat-button routerLink="/nested-ngfor">
+        {{ "Nested divs by ngFor" | uppercase }}
+      </button>
+      <button mat-button routerLink="/expansion">
+        {{ "Expansion" | uppercase }}
+      </button>
     </div>
   </mat-toolbar>
 </div>
